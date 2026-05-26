@@ -23,3 +23,11 @@ jobs:
       with:
         name: windows-build
         path: target/release/*.exe
+              fonts/
+
+
+
+
+
+
+        
