@@ -232,9 +232,11 @@ fn main() {
                 
                 ui.theme.font_id = Some(font_id);
 
+                /*
                 ui.theme.font_size_large = 24;
                 ui.theme.font_size_medium = 18;
                 ui.theme.font_size_small = 14;
+                */
 
                 let mut gui_state = GUIState::new(gui_fft_receiver);
 
