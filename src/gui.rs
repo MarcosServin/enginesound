@@ -204,6 +204,7 @@ pub fn gui(
     generator: Arc<RwLock<Generator>>,
     gui_state: &mut GUIState,
     display: &glium::Display,
+    font_id: conrod_core::text::font::Id,
 ) -> conrod_core::image::Map<glium::texture::Texture2d> {
     const TOP_MARGIN: conrod_core::Scalar = 10.0;
     const MARGIN: conrod_core::Scalar = 15.0;
