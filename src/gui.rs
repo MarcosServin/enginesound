@@ -500,7 +500,7 @@ pub fn gui(
                 }
             }
 
-            widget::Text::new("Mix").font_id(font_id)
+            widget::Text::new("Mix")
                 .font_size(16)
                 .down(DOWN_SPACE)
                 .w(ui.window_dim()[0] - MARGIN * 2.0)
@@ -632,7 +632,7 @@ pub fn gui(
             }
         }
 
-        widget::Text::new("Engine parameters").font_id(font_id)
+        widget::Text::new("Engine parameters")
             .font_size(16)
             .down(DOWN_SPACE)
             .w(ui.window_dim()[0] - MARGIN * 2.0)
@@ -787,7 +787,7 @@ pub fn gui(
         }
 
         {
-            widget::Text::new("Muffler parameters").font_id(font_id)
+            widget::Text::new("Muffler parameters")
                 .font_size(16)
                 .down(DOWN_SPACE)
                 .w(ui.window_dim()[0] - MARGIN * 2.0)
@@ -942,7 +942,7 @@ pub fn gui(
             }
         }
 
-        widget::Text::new("Cylinder parameters").font_id(font_id)
+        widget::Text::new("Cylinder parameters")
             .font_size(16)
             .down(DOWN_SPACE)
             .w(ui.window_dim()[0] - MARGIN * 2.0)
