@@ -224,10 +224,13 @@ fn main() {
                     .build();
                 let ids = gui::Ids::new(ui.widget_id_generator());
 
-                ui.fonts.insert(
-                    Font::from_bytes(&include_bytes!("../fonts/NotoSans/NotoSans-Regular.ttf")[..])
-                        .unwrap(),
+               let font_id = ui.fonts.insert(
+                Font::from_bytes(
+                    include_bytes!("../fonts/NotoSans/NotoSans-Regular.ttf") as &[u8]
+                ).unwrap(),
                 );
+                
+                ui.theme.font_id = Some(font_id);
 
                 let mut gui_state = GUIState::new(gui_fft_receiver);
 
