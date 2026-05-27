@@ -302,6 +302,7 @@ fn main() {
                         generator.clone(),
                         &mut gui_state,
                         display.get(),
+                        font_id,
                     );
 
                     let primitives = ui.draw();
